@@ -4,49 +4,50 @@
 #include <sys/stat.h>
 #include <fcntl.h> 
 
-void join(int argc , char** argv ){
+void join(int argc ,  char *argv[] ){
 	
-
-		    
-		    int fdDest = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC,
+	    int fdDest = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC,
 				      S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH);
-		    if (fdDest == -1) {
-			perror("Erreur lors de la création du fichier destination");
+		if (fdDest == -1) {
+		perror("Erreur lors de la création du fichier destination");
+		return 1;
+		}
+
+		
+		char buffer[200];
+		ssize_t nbRead, nbWrite;
+
+		for (int i = 2; i < argc; i++) {
+		
+		
+		int fdPart = open(argv[i], O_RDONLY);
+		if (fdPart == -1) {
+			perror("Erreur lors de l'ouverture d'une partie");
+			close(fdDest);
 			return 1;
-		    }
+		}
+		
+		while ((nbRead = read(fdPart, buffer, sizeof(buffer))) > 0) {
+			nbWrite = write(fdDest, buffer, nbRead);
+			if (nbWrite < 0 || nbRead <0) {
+			perror("Erreur lors de l'ecriture ou lors de la lecture dans le fichier destination");
+			close(fdPart);
+			close(fdDest);
+			return 1;
+			}
+		}
+
+		
+
+		close(fdPart) ;
+			}
+		
+		close(fdDest) ;
+		
+	return 0;
 
 		    
-		    char buffer[200];
-		    ssize_t nbRead, nbWrite;
-
-		    for (int i = 2; i < argc; i++) {
-			
-			
-			int fdPart = open(argv[i], O_RDONLY);
-			if (fdPart == -1) {
-			    perror("Erreur lors de l'ouverture d'une partie");
-			    close(fdDest);
-			    return 1;
-			}
-			
-			while ((nbRead = read(fdPart, buffer, sizeof(buffer))) > 0) {
-			    nbWrite = write(fdDest, buffer, nbRead);
-			    if (nbWrite < 0 || nbRead <0) {
-				perror("Erreur lors de l'ecriture ou lors de la lecture dans le fichier destination");
-				close(fdPart);
-				close(fdDest);
-				return 1;
-			    }
-			}
-
-			
-
-			close(fdPart) ;
-	       	    }
-			
-			close(fdDest) ;
-			
-			return 0;
+		    
 }
 
 
@@ -145,5 +146,6 @@ int main(int argc, char *argv[]) {
 	 
 				
    
+	}
 }
 
