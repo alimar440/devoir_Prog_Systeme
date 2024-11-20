@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
 	}else{
 		    
 		    if (argc < 3) {
-			write(STDERR_FILENO, "Usage: ./split <destination_file> <part_1> <part_2> ...\n", 54);
+			write(STDERR_FILENO, "Usage: ./split <fichier_destination> <part_1> <part_2> ...\n", 54);
 			return 1;
 		    }
 
