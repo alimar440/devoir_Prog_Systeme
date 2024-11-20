@@ -135,7 +135,7 @@ int main(int argc, char *argv[]) {
 	if (argc < 3) {
 			printf("Usage: ./split <fichier_destination> <part_1> <part_2> ...\n  "
 					"ou bien \n"
-					"./split <nombre de fichier (entier)\n");
+					"Usage: ./split <nombre de fichier (entier)\n");
 			exit(1) ;
 		
 	}
