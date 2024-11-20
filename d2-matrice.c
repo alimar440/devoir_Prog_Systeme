@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
 
             close(fd);
         } else {
-            printf("Erreur! Donnee le nom du fichier (-f) et la taille de la matrice (-d) \n");
+            printf("Erreur! Donnee le nom du fichier  et la taille de la matrice  \n");
         }
 
     }
@@ -170,7 +170,7 @@ int main(int argc, char *argv[]) {
 
         } else {
 
-            printf("Donnee le nom du fichier (-f) \n");
+            printf("Donnee le nom du fichier \n");
 
         }
 
