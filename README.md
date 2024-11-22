@@ -76,7 +76,7 @@ Ce programme permet de découper un fichier en plusieurs morceaux avec une taill
 ### **Commandes**
 
 #### **Split and Join **
-permet de découper un fichier en plusieurs morceaux avec une taille donnée `slit` , puis de reconstituer le fichier original à partir des morceaux `join`.
+permet de découper un fichier en plusieurs morceaux avec une taille donnée `split` , puis de reconstituer le fichier original à partir des morceaux `join`.
 
 #### **Join**
 
