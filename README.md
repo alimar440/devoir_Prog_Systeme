@@ -35,7 +35,7 @@ Il permet aussi de composer ces fonctions dans l'ordre souhaité :
 # Calcul de gof(3) = 2*(2^3)
 ./prog -g 3 -f
 
-
+ exit
 ## **Exercice 2 : Sauvegarde et Lecture de Matrices**
 
 ### **Description**
