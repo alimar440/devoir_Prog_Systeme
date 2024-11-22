@@ -34,8 +34,8 @@ Il permet aussi de composer ces fonctions dans l'ordre souhaité :
 
 # Calcul de gof(3) = 2*(2^3)
 ./prog -g 3 -f
-
- exit
+```
+ 
 ## **Exercice 2 : Sauvegarde et Lecture de Matrices**
 
 ### **Description**
@@ -65,7 +65,7 @@ Ce programme permet de gérer des matrices carrées au format **binaire** ou **t
 
 # Affichage d'une matrice en texte
 ./matrix -a -d 10 -f fichiermatrice.txt -t
-
+```
 
 ## **Exercice 3 : Split et Join de Fichiers**
 
@@ -80,7 +80,7 @@ Découpe un fichier en plusieurs morceaux de taille spécifiée.
 
 ```bash
 ./split nomfichier taille
-
+```
 ## **Exercice 4 : Threads avec Sémaphores**
 
 ### **Description**
@@ -95,7 +95,7 @@ Le résultat est une séquence oscillant entre \( -n \) et \( +n \).
 
 ```bash
 ./thread_prog n
-
+```
 ## **Exercice 5 : Exécution Linéaire de Threads**
 
 ### **Description**
