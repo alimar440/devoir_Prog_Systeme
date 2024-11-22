@@ -1,6 +1,7 @@
-# **Projets en Langage C**
+# **Devoirs en Langage C**
 
-Voici un ensemble de programmes réalisés en langage C pour répondre à plusieurs problématiques. Chaque programme est détaillé avec ses fonctionnalités, les options disponibles, et des exemples d'exécution.
+Voici un ensemble de programmes réalisés en langage C pour répondre à plusieurs problématiques, dans le cadre de devoirs. Chaque programme est détaillé avec ses fonctionnalités, les options disponibles, et des exemples d'exécution.
+
 
 ---
 
