@@ -9,7 +9,7 @@ int suiv = 1;
 int nbThread;
 sem_t semaphores[maxThread];
 
-void* threadFunction(void* arg) {
+void* threadSecondaire(void* arg) {
     while (1) {
         sem_wait(&semaphores[suiv - 1]);
 
@@ -36,7 +36,7 @@ int main() {
 
 	    pthread_t threads[nbThread];
 	    for (int i = 0; i < nbThread; i++) {
-		pthread_create(&threads[i], NULL, threadFunction, NULL);
+		pthread_create(&threads[i], NULL, threadSecondaire, NULL);
 	    }
 
 	    for (int i = 0; i < nbThread; i++) {
