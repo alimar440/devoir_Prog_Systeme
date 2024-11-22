@@ -75,11 +75,14 @@ Ce programme permet de découper un fichier en plusieurs morceaux avec une taill
 
 ### **Commandes**
 
-#### **Split**
-Découpe un fichier en plusieurs morceaux de taille spécifiée.
+#### **Split and Join **
+permet de découper un fichier en plusieurs morceaux avec une taille donnée `slit` , puis de reconstituer le fichier original à partir des morceaux `join`.
+
+#### **Join**
 
 ```bash
 ./split nomfichier taille
+./join nomfichier part1 part2 part3 ...
 ```
 ## **Exercice 4 : Threads avec Sémaphores**
 
