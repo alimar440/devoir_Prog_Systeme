@@ -89,8 +89,8 @@ permet de découper un fichier en plusieurs morceaux avec une taille donnée `sp
 ### **Description**
 
 Ce programme utilise deux threads pour effectuer des incréments et des décréments synchronisés grâce à des sémaphores.  
-- Le **Thread 1** incrémente une valeur de 1 à \( +n \).  
-- Le **Thread 2** décrémente cette valeur de 0 à \( -n \).  
+- Le **Thread 1** incrémente une valeur jusqu' à \( +n \).  
+- Le **Thread 2** décrémente cette valeur jusqu' à \( -n \).  
 
 Le résultat est une séquence oscillant entre \( -n \) et \( +n \).
 
