@@ -111,4 +111,4 @@ Chaque thread affiche un message pour indiquer son exécution.
 ### **Exécution**
 
 ```bash
-./thread_order n
+./thread_prog n
