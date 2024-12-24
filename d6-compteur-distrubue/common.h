@@ -14,7 +14,7 @@
 #include <sys/socket.h>
 #include <unistd.h> 
 
-//pour tester : nc 0.0.0.0 port
+
 
 
 #endif
