@@ -1,17 +1,4 @@
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netinet/ip.h> /* superset of previous */
-#include <string.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/types.h>          /* See NOTES */
-#include <sys/socket.h>
-#include <unistd.h> 
-
-//pour tester : nc 0.0.0.0 port
+#include "common.h"
 
 
 int main(int argc, char *argv[]) {
