@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
 	if (argc < 2) {
 		printf("Erreur : aucun fichier spécifié\n");
-		printf("Usage : %s  < PORT>\n", argv[0]);
+		printf("Usage : %s <@> < PORT>\n", argv[0]);
 		return 1; 
 	}
 	
